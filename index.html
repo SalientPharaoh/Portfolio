@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRUB-like Boot Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">GNU GRUB Version 2.42</div>
+    <div class="menu" id="boot-menu">
+        <div class="option">Ubuntu</div>
+        <div class="option">Advanced option for Ubuntu</div>
+        <div class="option">Windows Boot Manager (on /dev/sda2)</div>
+        <div class="option">Memory Test (memtest 86+)</div>
+    </div>
+    <div class="text">Use ↑ and ↓ keys to select which entry is highlighted.</div>
+    <div class="text">Press Enter to boot the selected OS.</div>
+
+    <script>
+        const options = document.querySelectorAll('.option');
+        let selectedIndex = 0;
+
+        function updateSelection() {
+            options.forEach((option, index) => {
+                if (index === selectedIndex) {
+                    option.classList.add('selected');
+                } else {
+                    option.classList.remove('selected');
+                }
+            });
+        }
+
+        updateSelection();
+
+        function selectOption() {
+            const selectedOption = options[selectedIndex].textContent;
+
+    switch (selectedOption) {
+        case 'Ubuntu':
+            window.location.href = 'ubuntu.html'; // Replace 'ubuntu.html' with the actual URL you want to redirect to
+            break;
+        case 'Advanced option for Ubuntu':
+            window.location.href = 'advanced_ubuntu.html'; // Replace 'advanced_ubuntu.html' with the actual URL
+            break;
+        case 'Windows Boot Manager (on /dev/sda2)':
+            window.location.href = 'windows_boot.html'; // Replace 'windows_boot.html' with the actual URL
+            break;
+        case 'Memory Test (memtest 86+)':
+            window.location.href = 'memtest.html'; // Replace 'memtest.html' with the actual URL
+            break;
+        default:
+            alert('Invalid option selected'); // Add an alert for any unexpected options
+    }
+        }
+
+        window.addEventListener('keydown', (event) => {
+            if (event.key === 'ArrowUp' && selectedIndex > 0) {
+                selectedIndex--;
+                updateSelection();
+            } else if (event.key === 'ArrowDown' && selectedIndex < options.length - 1) {
+                selectedIndex++;
+                updateSelection();
+            } else if (event.key === 'Enter') {
+                selectOption();
+            }
+        });
+    </script>
+</body>
+</html>

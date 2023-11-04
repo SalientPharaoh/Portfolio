@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubuntu Loading Screen</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #FFF;
+            font-family: 'Courier New', monospace;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            height: 100vh;
+            margin: 0;
+            padding: 20px; /* Added padding for top and left alignment */
+            font-size: 12px; /* Set font size to 12px */
+            white-space: pre-line;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div id="loading-text"></div>
+
+    <script>
+        const loadingText = document.getElementById('loading-text');
+
+        function getFormattedTimestamp() {
+    const now = new Date();
+    const hours = String(now.getHours()).padStart(2, '0');
+    const minutes = String(now.getMinutes()).padStart(2, '0');
+    const seconds = String(now.getSeconds()).padStart(2, '0');
+
+    return `[${hours}:${minutes}:${seconds}]`;
+}
+
+// Your original text with placeholders
+let bootText = `
+Booting from /dev/sda1
+Loading Linux Kernel...
+Initializing hardware...
+Detecting network devices...
+Starting services...
+Mounting root file system...
+Setting up user sessions...
+Loading desktop environment...
+Welcome to Ubuntu 20.04!
+
+[Timestamp] ACPI BIOS Error (bug): Could not resolve symbol AE_NOT_FOUND (20190816/psargs-330)
+[Timestamp]  Architecture:                       x86_64
+[Timestamp]  CPU op-mode(s):                     32-bit, 64-bit
+[Timestamp]  Byte Order:                         Little Endian
+[Timestamp]  Address sizes:                      39 bits physical, 48 bits virtual
+[Timestamp]  CPU(s):                             16
+[Timestamp]  On-line CPU(s) list:                0-15
+[Timestamp]  Thread(s) per core:                 1
+[Timestamp]  Core(s) per socket:                 12
+[Timestamp]  Socket(s):                          1
+[Timestamp]  NUMA node(s):                       1
+[Timestamp]  Vendor ID:                          GenuineIntel
+[Timestamp]  CPU family:                         6
+[Timestamp]  Model:                              154
+[Timestamp]  Model name:                         12th Gen Intel(R) Core(TM) i5-12500H
+[Timestamp]  Stepping:                           3
+[Timestamp]  CPU MHz:                            651.473
+[Timestamp]  CPU max MHz:                        4500.0000
+[Timestamp]  CPU min MHz:                        400.0000
+[Timestamp]  BogoMIPS:                           6220.80
+[Timestamp]  Virtualization:                     VT-x
+[Timestamp]  L1d cache:                          288 KiB
+[Timestamp]  L1i cache:                          192 KiB
+[Timestamp]  L2 cache:                           7.5 MiB
+[Timestamp]  NUMA node0 CPU(s):                  0-15
+[Timestamp]  Vulnerability Gather data sampling: Not affected
+[Timestamp]  Vulnerability Itlb multihit:        Not affected
+[Timestamp]  Vulnerability L1tf:                 Not affected
+[Timestamp]  Vulnerability Mds:                  Not affected
+[Timestamp]  Vulnerability Meltdown:             Not affected
+[Timestamp]  Vulnerability Mmio stale data:      Not affected
+[Timestamp]  Vulnerability Retbleed:             Not affected
+
+
+[Timestamp] Checking Filesystem...
+[Timestamp] /dev/sda1: clean
+
+[Timestamp] Starting Apache Web Server...
+[Timestamp] Apache Web Server: Service started successfully.
+
+[Timestamp] Configuring Network Interfaces...
+[Timestamp] Network Interface eth0: Configuration applied successfully.
+
+[Timestamp] Starting Database Service...
+[Timestamp] Database Service: Ready to accept connections.
+
+[Timestamp] Loading User Settings...
+[Timestamp] User Alice logged in.
+
+[Timestamp] Checking for System Updates...
+[Timestamp] Updates available: 5.
+[Timestamp] Installing updates...
+
+[Timestamp] Setting up Sound Devices...
+[Timestamp] Sound card detected: Realtek HD Audio.
+[Timestamp] Additional sound devices configured.
+
+[Timestamp] Starting Graphical Interface...
+[Timestamp] Display detected: Dell Ultrasharp U2719D.
+[Timestamp] Resolution set to 2560x1440.
+[Timestamp] Graphics driver initialized.
+
+[Timestamp] Welcome screen displayed...
+[Timestamp] User Jatayu logged in.
+`;
+
+// Function to replace placeholders with actual timestamps
+function replaceTimestamps(text) {
+    return text.replace(/\[Timestamp\]/g, getFormattedTimestamp());
+}
+
+// Replace timestamps and log the result
+let text = replaceTimestamps(bootText);
+
+
+        const textLines = text.trim().split('\n');
+
+        function displayLoadingText() {
+            let index = 0;
+
+            function animate() {
+                if (index < textLines.length) {
+                    loadingText.innerHTML += textLines[index] + '<br>';
+                    index++;
+                    window.scrollTo(0, document.body.scrollHeight);
+                    setTimeout(animate, 100); // Delay between lines
+                } else {
+                    setTimeout(redirectToMain, 800); // Wait for 2 seconds before redirecting
+                }
+            }
+
+            animate();
+        }
+
+        function redirectToMain() {
+            window.location.href = 'logged_in.html'; // Replace with actual URL
+        }
+
+        displayLoadingText();
+    </script>
+</body>
+</html>

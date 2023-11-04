@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#terminal {
+    background-color: black;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+}
+
+#input input[type="text"] {
+    background: transparent;
+    border: none;
+    color: white;
+    font-family: monospace;
+    font-size: inherit;
+    outline: none;
+    width: calc(100% - 20px);
+}
+
+#output {
+    flex: 1;
+    overflow-y: auto;
+    border: 1px solid #00FF00;
+    padding: 10px;
+    margin-bottom: 10px; /* Add some space below the output */
+}
