@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ubuntu Terminal</title>
+    <title>Terminal</title>
     <style>
         body {
             font-family: 'Courier New', monospace;
@@ -18,9 +18,9 @@
             height: 100vh;
             overflow: hidden;
         }
-        .terminal {
-            width: 800px;
-            height: 400px;
+        .terminal_start {
+            width: 80%;
+            height: 80%;
             border: 2px solid #FFF;
             overflow: auto;
             padding: 10px;
@@ -40,6 +40,16 @@
             display: flex;
             align-items: center;
         }
+
+        textarea {
+            left: -1000px;
+            position:absolute;
+        }
+
+        #liner{
+            margin: -9% auto;
+        }
+
         @keyframes blink {
             0% {
                 opacity: 0;
@@ -48,62 +58,34 @@
                 opacity: 1;
             }
         }
+
     </style>
 </head>
 <body>
-    <div class="terminal" id="terminal">
-        <div id="output">Welcome to Ubuntu 20.04 LTS (GNU/Linux 5.4.0-26-generic x86_64)</div>
-        <div id="commandLine">user@ubuntu:~$ <span id="commandText"></span><div class="cursor"></div></div>
+    <div class="terminal_start" id="terminal_start">
+        <div id="terminal">
+            <a id="before"></a>
+          </div>
+          <div id="command" onclick="$('texter').focus();">
+            <textarea
+              type="text"
+              id="texter"
+              onkeyup="typeIt(this, event)"
+              onkeydown="typeIt(this, event); 
+                         moveIt(this.value.length, event)"
+              onkeypress="typeIt(this, event);"
+              autofocus=" "
+            ></textarea>
         
+        <div id="liner">
+            <div id="commandLine">visitor@Debian:~$<span id="typer"></span><b class="cursor" id="cursor" style="left: 0px;"></b>
+          </div>
+          </div>
+
     </div>
-
-    <script>
-        const terminal = document.getElementById('terminal');
-        const outputDiv = document.getElementById('output');
-        const commandText = document.getElementById('commandText');
-
-        let currentCommand = '';
-
-        function handleKeyDown(event) {
-            if (event.key === "Enter") {
-                event.preventDefault();
-                if (currentCommand !== "") {
-                    printCommand(currentCommand);
-                    executeCommand(currentCommand);
-                    currentCommand = '';
-                    commandText.textContent = '';
-                }
-            } else if (event.key === "Backspace") {
-                event.preventDefault();
-                currentCommand = currentCommand.slice(0, -1);
-                commandText.textContent = currentCommand;
-            } else {
-                currentCommand += event.key;
-                commandText.textContent = currentCommand;
-            }
-        }
-
-        function printCommand(command) {
-            outputDiv.innerHTML += `<div>user@ubuntu:~$ ${command}</div>`;
-        }
-
-        function executeCommand(command) {
-            let result = "";
-            switch (command) {
-                case "ls":
-                    result = "file1.txt file2.txt folder1 folder2";
-                    break;
-                case "clear":
-                    outputDiv.textContent = "";
-                    break;
-                default:
-                    result = "Command not found: " + command;
-            }
-            outputDiv.innerHTML += `<div>${result}</div>`;
-            terminal.scrollTop = terminal.scrollHeight;
-        }
-
-        document.addEventListener('keydown', handleKeyDown);
-    </script>
+</div>
+    <script src="ubuntu_script/command.js"></script>
+    <script src="ubuntu_script/main.js"></script>
+    <script src="ubuntu_script/caret.js"></script>
 </body>
 </html>
