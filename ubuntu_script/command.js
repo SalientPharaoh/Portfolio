@@ -3,10 +3,10 @@ var linkedin = "https://www.linkedin.com/in/sahil-khirwal-464466216/";
 var instagram = "https://www.instagram.com/the_sahil_khirwal/";
 var github = "https://github.com/SalientPharaoh";
 var email = 'mailto:khirwalsahil@gmail.com';
-var clipsurf = "https://github.com/SalientPharaoh/CipSurf_Email_Collection";
-var clipsurfgit="https://clip-surf.vercel.app/";
-var notengit="https://notenavigator.onrender.com/";
-var noten = "https://github.com/SalientPharaoh/NoteNavigator";
+var clipsurfgit = "https://github.com/SalientPharaoh/CipSurf_Email_Collection";
+var clipsurf="https://clip-surf.vercel.app/";
+var noten="https://notenavigator.onrender.com/";
+var notengit = "https://github.com/SalientPharaoh/NoteNavigator";
 var ebook = "https://github.com/SalientPharaoh/Expense_Book";
 var webscrap = "https://github.com/SalientPharaoh/Scrapper_Continuo";
 
@@ -52,8 +52,8 @@ projects = [
   "<br>",
   'ClipSurf :      <a href="' + clipsurf + '" target="_blank">website/clipsurf' + "</a>"+ '     |  <a href="' + clipsurfgit + '" target="_blank">github/clipsurf' + "</a>",
   'Note Navigator :    <a href="' + noten + '" target="_blank">website/notenavigator' + "</a>"+ '    |   <a href="' + notengit + '" target="_blank">github/notenavigator' + "</a>",
-  'Expense Book :     <a href="' + ebook + '" target="_blank">website/expensebook' + "</a>",
-  'Web Scraper :       <a href="' + webscrap + '" target="_blank">website/webscraper' + "</a>",
+  'Expense Book :     <a href="' + ebook + '" target="_blank">github/expensebook' + "</a>",
+  'Web Scraper :       <a href="' + webscrap + '" target="_blank">github/webscraper' + "</a>",
   "<br>"
 ];
 
@@ -73,10 +73,8 @@ help = [
 ];
 
 banner = [
-    '<span class="inedx">Welcome to Debian 20.04 LTS (GNU/Linux 5.4.0-26-generic x86_64)</span>',
-  "░█▀▀░█▀█░█░█░▀█▀░█░░░░░█░█░█░█░▀█▀░█▀▄░█░█░█▀█░█░░",
-  "░▀▀█░█▀█░█▀█░░█░░█░░░░░█▀▄░█▀█░░█░░█▀▄░█▄█░█▀█░█░░",
-  "░▀▀▀░▀░▀░▀░▀░▀▀▀░▀▀▀░░░▀░▀░▀░▀░▀▀▀░▀░▀░▀░▀░▀░▀░▀▀▀",
+    '<span class="inedx color2">Welcome to Debian 20.04 LTS (GNU/Linux 5.4.0-26-generic x86_64)</span>',
+    "░█▀▀░█▀█░█░█░▀█▀░█░░░░░█░█░█░█░▀█▀░█▀▄░█░█░█▀█░█░░<br>░▀▀█░█▀█░█▀█░░█░░█░░░░░█▀▄░█▀█░░█░░█▀▄░█▄█░█▀█░█░░<br>░▀▀▀░▀░▀░▀░▀░▀▀▀░▀▀▀░░░▀░▀░▀░▀░▀▀▀░▀░▀░▀░▀░▀░▀░▀▀▀",
   "____________________________________________________",
   '<span class="color2">Welcome to my interactive web terminal.</span>',
   "<span class=\"color2\">For a list of available commands, type</span> <span class=\"command\">'help'</span><span class=\"color2\">.</span>",
@@ -84,24 +82,15 @@ banner = [
 
 resume = [
 "<br>",
-"░█▀▀░█▀█░█░█░▀█▀░█░░░░░█░█░█░█░▀█▀░█▀▄░█░█░█▀█░█░░",
-"░▀▀█░█▀█░█▀█░░█░░█░░░░░█▀▄░█▀█░░█░░█▀▄░█▄█░█▀█░█░░",
-"░▀▀▀░▀░▀░▀░▀░▀▀▀░▀▀▀░░░▀░▀░▀░▀░▀▀▀░▀░▀░▀░▀░▀░▀░▀▀▀",
-"________________________________________________________",
-"<br>",
-"╔═╗╔╦╗╦ ╦╔═╗╔═╗╔╦╗╦╔═╗╔╗╔",
-"║╣  ║║║ ║║  ╠═╣ ║ ║║ ║║║║",
-"╚═╝═╩╝╚═╝╚═╝╩ ╩ ╩ ╩╚═╝╝╚╝",
+"░█▀▀░█▀█░█░█░▀█▀░█░░░░░█░█░█░█░▀█▀░█▀▄░█░█░█▀█░█░░<br>░▀▀█░█▀█░█▀█░░█░░█░░░░░█▀▄░█▀█░░█░░█▀▄░█▄█░█▀█░█░░<br>░▀▀▀░▀░▀░▀░▀░▀▀▀░▀▀▀░░░▀░▀░▀░▀░▀▀▀░▀░▀░▀░▀░▀░▀░▀▀▀",
+"_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _",
+"╔═╗╔╦╗╦ ╦╔═╗╔═╗╔╦╗╦╔═╗╔╗╔<br>║╣  ║║║ ║║  ╠═╣ ║ ║║ ║║║║<br>╚═╝═╩╝╚═╝╚═╝╩ ╩ ╩ ╩╚═╝╝╚╝",
 "Bachelor of Engineering (B.E.) in Computer Science and Engineering",
 "Ramaiah Institute of Technology, Bengaluru",
 "2021-2025",
 "Current CGPA : 9.81",
-"________________________________________________________",
-"<br>",
-"╔═╗═╗ ╦╔═╗╔═╗╦═╗╦╔═╗╔╗╔╔═╗╔═╗",
-"║╣ ╔╩╦╝╠═╝║╣ ╠╦╝║║╣ ║║║║  ║╣ ",
-"╚═╝╩ ╚═╩  ╚═╝╩╚═╩╚═╝╝╚╝╚═╝╚═╝",
-"<br>",
+"_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _",
+"╔═╗═╗ ╦╔═╗╔═╗╦═╗╦╔═╗╔╗╔╔═╗╔═╗<br>║╣ ╔╩╦╝╠═╝║╣ ╠╦╝║║╣ ║║║║  ║╣<br>╚═╝╩ ╚═╩  ╚═╝╩╚═╩╚═╝╝╚╝╚═╝╚═╝",
 "Samsung R&D Institute : Research and Development Intern",
 "Project Details : Analyzed the performance of Rust in",
 "building high-performance gRPC-based speech recognition",
@@ -114,22 +103,14 @@ resume = [
 "enhancing the accuracy of the machine learning model and ",
 "contributed to achieving an impressive 85% detection ",
 "accuracy, a 15% improvement over previous iterations.",
-"________________________________________________________",
-"<br>",
-"╔═╗╦═╗╔═╗ ╦╔═╗╔═╗╔╦╗╔═╗",
-"╠═╝╠╦╝║ ║ ║║╣ ║   ║ ╚═╗",
-"╩  ╩╚═╚═╝╚╝╚═╝╚═╝ ╩ ╚═╝",
-"<br>",
+"_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _",
+"╔═╗╦═╗╔═╗ ╦╔═╗╔═╗╔╦╗╔═╗<br>╠═╝╠╦╝║ ║ ║║╣ ║   ║ ╚═╗<br>╩  ╩╚═╚═╝╚╝╚═╝╚═╝ ╩ ╚═╝",
 'ClipSurf :      <a href="' + clipsurf + '" target="_blank">website/clipsurf' + "</a>"+ '     |  <a href="' + clipsurfgit + '" target="_blank">github/clipsurf' + "</a>",
 'Note Navigator :    <a href="' + noten + '" target="_blank">website/notenavigator' + "</a>"+ '    |   <a href="' + notengit + '" target="_blank">github/notenavigator' + "</a>",
 'Expense Book :     <a href="' + ebook + '" target="_blank">website/expensebook' + "</a>",
 'Web Scraper :       <a href="' + webscrap + '" target="_blank">website/webscraper' + "</a>",
-"________________________________________________________",
-"<br>",
-"╔═╗╦╔═╦╦  ╦  ╔═╗",
-"╚═╗╠╩╗║║  ║  ╚═╗",
-"╚═╝╩ ╩╩╩═╝╩═╝╚═╝",
-"<br>",
+"_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _",
+"╔═╗╦╔═╦╦  ╦  ╔═╗<br>╚═╗╠╩╗║║  ║  ╚═╗<br>╚═╝╩ ╩╩╩═╝╩═╝╚═╝",
 "Programming Languages: C/C++, Java, Python, Rust",
 "Database Management Systems: Relational Databases ",
 "(SQL, MySQL), Non-Relational (MongoDB), Firebase",
@@ -140,6 +121,6 @@ resume = [
 "core member of official club FOSS club of MSRIT.",
 "Handled a team of 300+ members responsible for conducting ",
 "events for cultivating open-source culture of the college.",
-"________________________________________________________",
+"_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _",
 "<br>",
 ];
