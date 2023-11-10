@@ -9,10 +9,10 @@
 <body>
     <div class="header">GNU GRUB Version 2.42</div>
     <div class="menu" id="boot-menu">
-        <div class="option">Ubuntu</div>
-        <div class="option">Advanced option for Ubuntu</div>
-        <div class="option">Windows Boot Manager (on /dev/sda2)</div>
-        <div class="option">Memory Test (memtest 86+)</div>
+        <a src="/ubuntu.html" id="redirect"><div class="option">Ubuntu</div></a>
+        <a src="/ubuntu.html" id="redirect"><div class="option">Advanced option for Ubuntu</div></a>
+        <a src="/ubuntu.html" id="redirect"><div class="option">Windows Boot Manager (on /dev/sda2)</div></a>
+        <a src="/ubuntu.html" id="redirect"><div class="option">Memory Test (memtest 86+)</div></a>
     </div>
     <div class="text">Use ↑ and ↓ keys to select which entry is highlighted.</div>
     <div class="text">Press Enter to boot the selected OS.</div>
@@ -20,6 +20,10 @@
     <script>
         const options = document.querySelectorAll('.option');
         let selectedIndex = 0;
+
+        function redirection(){
+            window.location.href = 'ubuntu.html';
+        }
 
         function updateSelection() {
             options.forEach((option, index) => {
@@ -38,21 +42,23 @@
 
     switch (selectedOption) {
         case 'Ubuntu':
-            window.location.href = 'ubuntu.html'; // Replace 'ubuntu.html' with the actual URL you want to redirect to
+            window.location.href = 'ubuntu.html';
             break;
         case 'Advanced option for Ubuntu':
-            window.location.href = 'ubuntu.html'; // Replace 'advanced_ubuntu.html' with the actual URL
+            window.location.href = 'ubuntu.html'; 
             break;
         case 'Windows Boot Manager (on /dev/sda2)':
-            window.location.href = 'ubuntu.html'; // Replace 'windows_boot.html' with the actual URL
+            window.location.href = 'ubuntu.html';
             break;
         case 'Memory Test (memtest 86+)':
-            window.location.href = 'ubuntu.html'; // Replace 'memtest.html' with the actual URL
+            window.location.href = 'ubuntu.html'; 
             break;
         default:
-            alert('Invalid option selected'); // Add an alert for any unexpected options
+            alert('Invalid option selected'); 
     }
         }
+
+        document.getElementById('redirect').setAttribute('onclick', 'redirection()');
 
         window.addEventListener('keydown', (event) => {
             if (event.key === 'ArrowUp' && selectedIndex > 0) {
