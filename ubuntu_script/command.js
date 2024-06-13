@@ -9,6 +9,9 @@ var noten="https://notenavigator.onrender.com/";
 var notengit = "https://github.com/SalientPharaoh/NoteNavigator";
 var ebook = "https://github.com/SalientPharaoh/Expense_Book";
 var webscrap = "https://github.com/SalientPharaoh/Scrapper_Continuo";
+var studenturesgit = "https://github.com/SalientPharaoh/StuDentures";
+var studentures = "https://stu-dentures.vercel.app/";
+var neuralopt = "https://github.com/SalientPharaoh/Optimisation_of_dynamic_neural_networks";
 
 
 
@@ -50,6 +53,8 @@ projects = [
   "Here are some of my projects that i enjoyed building :",
   "<br>",
   "<br>",
+  'StuDentures :      <a href="' + studentures + '" target="_blank">website/studentures' + "</a>"+ '     |  <a href="' + studenturesgit + '" target="_blank">github/studentures' + "</a>",
+  'Dynamic Neural Network Optimisation :     <a href="' + neuralopt + '" target="_blank">github/Neural_Network_Optimisation' + "</a>",
   'ClipSurf :      <a href="' + clipsurf + '" target="_blank">website/clipsurf' + "</a>"+ '     |  <a href="' + clipsurfgit + '" target="_blank">github/clipsurf' + "</a>",
   'Note Navigator :    <a href="' + noten + '" target="_blank">website/notenavigator' + "</a>"+ '    |   <a href="' + notengit + '" target="_blank">github/notenavigator' + "</a>",
   'Expense Book :     <a href="' + ebook + '" target="_blank">github/expensebook' + "</a>",
@@ -88,7 +93,7 @@ resume = [
 "Bachelor of Engineering (B.E.) in Computer Science and Engineering",
 "Ramaiah Institute of Technology, Bengaluru",
 "2021-2025",
-"Current CGPA : 9.81",
+"Current CGPA : 9.67",
 "_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _",
 "<span class='whitetext'>╔═╗═╗ ╦╔═╗╔═╗╦═╗╦╔═╗╔╗╔╔═╗╔═╗<br>║╣ ╔╩╦╝╠═╝║╣ ╠╦╝║║╣ ║║║║  ║╣<br>╚═╝╩ ╚═╩  ╚═╝╩╚═╩╚═╝╝╚╝╚═╝╚═╝</span>",
 "Samsung R&D Institute : Research and Development Intern",
@@ -97,26 +102,29 @@ resume = [
 "service,leveraging Rust's concurrency and memory safety ",
 "to optimize response times and resource utilization.",
 "<br>",
-"Ramaiah Institute of Dental Sciences : Backend Developer",
-"Project Details : Played a pivotal role in annotating",
-"real-time images with critical carcinogenic features, ",
-"enhancing the accuracy of the machine learning model and ",
-"contributed to achieving an impressive 85% detection ",
-"accuracy, a 15% improvement over previous iterations.",
+"Decentralized Planning Incorporation : Software Developer Intern",
+"Project Details : Optimized database queries to accelerate ",
+"geospatial data retrieval, resulting in a more efficient ",
+"and responsive API and improved geocoding and reverse geocoding API ",
+"performance by 30\% through the implementation of caching mechanisms. ",
+"Implemented parallel processing techniques to enhance data loading  ",
+"efficiency, contributing to a more responsive data pipeline.",
 "_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _",
 "<span class='whitetext'>╔═╗╦═╗╔═╗ ╦╔═╗╔═╗╔╦╗╔═╗<br>╠═╝╠╦╝║ ║ ║║╣ ║   ║ ╚═╗<br>╩  ╩╚═╚═╝╚╝╚═╝╚═╝ ╩ ╚═╝</span>",
+'StuDentures :      <a href="' + studentures + '" target="_blank">website/studentures' + "</a>"+ '     |  <a href="' + studenturesgit + '" target="_blank">github/studentures' + "</a>",
+'Dynamic Neural Network Optimisation :     <a href="' + neuralopt + '" target="_blank">github/Neural_Network_Optimisation' + "</a>",
 'ClipSurf :      <a href="' + clipsurf + '" target="_blank">website/clipsurf' + "</a>"+ '     |  <a href="' + clipsurfgit + '" target="_blank">github/clipsurf' + "</a>",
 'Note Navigator :    <a href="' + noten + '" target="_blank">website/notenavigator' + "</a>"+ '    |   <a href="' + notengit + '" target="_blank">github/notenavigator' + "</a>",
 'Expense Book :     <a href="' + ebook + '" target="_blank">website/expensebook' + "</a>",
 'Web Scraper :       <a href="' + webscrap + '" target="_blank">website/webscraper' + "</a>",
 "_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _",
 "<span class='whitetext'>╔═╗╦╔═╦╦  ╦  ╔═╗<br>╚═╗╠╩╗║║  ║  ╚═╗<br>╚═╝╩ ╩╩╩═╝╩═╝╚═╝</span>",
-"Programming Languages: C/C++, Java, Python, Rust",
+"Programming Languages: C/C++, Java, Python, Rust, JavaScript",
 "Database Management Systems: Relational Databases ",
-"(SQL, MySQL), Non-Relational (MongoDB), Firebase",
-"Frameworks and Tools: Flask, Django, Git, GitHub Workflows",
+"(SQL, MySQL), Non-Relational (MongoDB, HBase, HDFS), Firebase, Hadoop",
+"Frameworks and Tools: Flask, Django, Git, GitHub Workflows, Ansible, Kubernetes, AWS",
+"Web Technologies: Next.js, React.js, Node.js, Express.js, TailwindCSS",
 "Others: Web Sockets, REST API, HTML, CSS, UNIX/LINUX",
-"5-star at Hackerrank, 1414 max rating at CodeChef",
 "<br>",
 "core member of official club FOSS club of MSRIT.",
 "Handled a team of 300+ members responsible for conducting ",
